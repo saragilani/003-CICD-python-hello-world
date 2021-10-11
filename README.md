@@ -19,3 +19,51 @@ You can see that the Test stage ("job" in GitHub lingo) is failing, and that the
 &bigstar; Click the test stage to navigate to an expanded view showing the details of what's going wrong.
 
 Once you have found the source of the problem, you will need to modify the file in question and commit your changes back to your repository.
+
+## 3. Fix the Deploy stage
+
+![broken-pipeline-deploy](https://user-images.githubusercontent.com/910448/136778503-eaa780d5-df05-4c67-b786-54f784e7b60c.png)
+
+&bigstar; Click the Deploy step to determine what's not working
+
+![broken-pipeline-deploy-reason](https://user-images.githubusercontent.com/910448/136778511-ee9bd735-3643-40c2-b7af-07b015418661.png)
+
+&bigstar; Inspect the pipeline code at .github/workflows/pipeline.yml. You should see that it's trying to deploy the application to Heroku using two secrets, HEROKU_API_KEY and HEROKU_APP_NAME.
+
+
+```
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Deploy to Heroku
+        run: |
+          git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
+          git push heroku `git subtree split --prefix src main`:/refs/heads/main --force
+```
+
+&bigstar; Sign up for a Heroku account using https://signup.heroku.com/python
+
+&bigstar; Create an application on Heroku
+
+![heroku-create-app](https://user-images.githubusercontent.com/910448/136778303-051d19e3-bfed-460e-a896-e230c5905f84.png)
+
+&bigstar; Retrieve your API key
+
+*Note: don't disclose this to other people. This API key allows programmatic access to your Heroku account.*
+
+![heroku-api-key](https://user-images.githubusercontent.com/910448/136779185-9c46a7e7-71c0-49c0-ae2a-2a2a2f050e05.png)
+
+&bigstar; Update your repository, adding these two values as Repository Secrets
+
+![secrets](https://user-images.githubusercontent.com/910448/136779412-fe866160-b122-49bb-8442-782764e31cb6.png)
+
+![adding-a-secret](https://user-images.githubusercontent.com/910448/136779420-a727aa48-ecf5-46bc-a161-47a79d17d32e.png)
+
+
+&bigstar; Re-run your workflow as shown below
+
+![re-run job](https://user-images.githubusercontent.com/910448/136779447-bd289240-838c-4d63-b62d-e337f7e90568.png)
+
