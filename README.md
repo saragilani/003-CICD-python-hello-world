@@ -4,7 +4,7 @@ Note: this repo has a failing pipeline. Can you fix it so that the tests pass an
 
 ## 1. Fork this repo
 
-In order to have a working copy, fork this repository. This will automatically create a pipeline which you can see by accessing the "Actions" tab here in GitHub.
+In order to have a working copy, fork this repository. You will need to enable workflows in your repository which will automatically create a pipeline which you can see by accessing the "Actions" tab here in GitHub.
 
 &bigstar; On the Actions tab, click "Run Workflow" to start the pipeline for the first time.
 
@@ -52,6 +52,9 @@ Once you have found the source of the problem, you will need to modify the file 
 
 &bigstar; Retrieve your API key
 
+You can find your API key in your Heroku account's Account Settings > Account tab
+
+
 *Note: don't disclose this to other people. This API key allows programmatic access to your Heroku account.*
 
 ![heroku-api-key](https://user-images.githubusercontent.com/910448/136779185-9c46a7e7-71c0-49c0-ae2a-2a2a2f050e05.png)
@@ -75,3 +78,6 @@ Adding HEROKU_APP_NAME:
 ## Finish
 
 If everything went well, you should now have a green pipeline. Visiting the URL for your Heroku app should display the message "Hello world".
+
+Your Heroku URL is usually https://{your-application-name}.herokuapp.com.
+
