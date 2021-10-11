@@ -24,7 +24,7 @@ Once you have found the source of the problem, you will need to modify the file 
 
 ![broken-pipeline-deploy](https://user-images.githubusercontent.com/910448/136778503-eaa780d5-df05-4c67-b786-54f784e7b60c.png)
 
-&bigstar; Click the Deploy step to determine what's not working
+&bigstar; Click the Deploy step to determine what's not working. Note that there's not quite enough detail shown to debug the issue.
 
 ![broken-pipeline-deploy-reason](https://user-images.githubusercontent.com/910448/136778511-ee9bd735-3643-40c2-b7af-07b015418661.png)
 
