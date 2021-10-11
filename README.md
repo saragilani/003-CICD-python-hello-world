@@ -71,3 +71,7 @@ Adding HEROKU_APP_NAME:
 
 ![re-run job](https://user-images.githubusercontent.com/910448/136779447-bd289240-838c-4d63-b62d-e337f7e90568.png)
 
+
+## Finish
+
+If everything went well, you should now have a green pipeline. Visiting the URL for your Heroku app should display the message "Hello world".
