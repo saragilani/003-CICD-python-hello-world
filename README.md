@@ -58,7 +58,7 @@ Once you have found the source of the problem, you will need to modify the file 
 
 &bigstar; Update your repository, adding both HEROKU_API_KEY and HEROKU_APP_NAME as Repository Secrets
 
-HEROKU_API_KEY is already added:
+After adding HEROKU_API_KEY it should look like this:
 
 ![secrets](https://user-images.githubusercontent.com/910448/136779412-fe866160-b122-49bb-8442-782764e31cb6.png)
 
