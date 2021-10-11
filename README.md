@@ -67,7 +67,7 @@ Adding HEROKU_APP_NAME:
 ![adding-a-secret](https://user-images.githubusercontent.com/910448/136779420-a727aa48-ecf5-46bc-a161-47a79d17d32e.png)
 
 
-&bigstar; Re-run your workflow as shown below
+&bigstar; Re-run your workflow using the "Re-run all jobs" button as shown in the top-right below:
 
 ![re-run job](https://user-images.githubusercontent.com/910448/136779447-bd289240-838c-4d63-b62d-e337f7e90568.png)
 
