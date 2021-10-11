@@ -56,9 +56,13 @@ Once you have found the source of the problem, you will need to modify the file 
 
 ![heroku-api-key](https://user-images.githubusercontent.com/910448/136779185-9c46a7e7-71c0-49c0-ae2a-2a2a2f050e05.png)
 
-&bigstar; Update your repository, adding these two values as Repository Secrets
+&bigstar; Update your repository, adding both HEROKU_API_KEY and HEROKU_APP_NAME as Repository Secrets
+
+HEROKU_API_KEY is already added:
 
 ![secrets](https://user-images.githubusercontent.com/910448/136779412-fe866160-b122-49bb-8442-782764e31cb6.png)
+
+Adding HEROKU_APP_NAME:
 
 ![adding-a-secret](https://user-images.githubusercontent.com/910448/136779420-a727aa48-ecf5-46bc-a161-47a79d17d32e.png)
 
