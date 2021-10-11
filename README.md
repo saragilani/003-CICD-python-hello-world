@@ -85,3 +85,13 @@ If everything went well, you should now have a green pipeline. Visiting the URL 
 
 Your Heroku URL is usually https://{your-application-name}.herokuapp.com.
 
+## Extension (optional)
+
+If you've finished the above with time to spare, try this bonus activity...
+
+Let's imagine users of the Hello World app require a second route, '/goodbye', which will output the text 'Goodbye'.
+
+Following the discipline of TDD, add a new failing test to `src/test_main.py` which will test this new route.
+
++ *What happens when you commit the updated test code to main?*
++ *Can the app still be accessed at the URL?* and *Why is this?*
