@@ -6,7 +6,11 @@ Note: this repo has a failing pipeline. Can you fix it so that the tests pass an
 
 In order to have a working copy, fork this repository. You will need to enable workflows in your repository which will automatically create a pipeline which you can see by accessing the "Actions" tab here in GitHub.
 
+In the .github/workflows/pipeline.yml file you will find the code which defines our pipeline. There are three different "jobs" - *Build*, *Test* and *Deploy*. 
+
 &bigstar; On the Actions tab, click "Run Workflow" to start the pipeline for the first time.
+
+Note that if you make a small change (e.g. the name of a step) it will trigger the pipeline automatically.
 
 ![forked-repo](https://user-images.githubusercontent.com/910448/136774899-304070b8-ee52-4035-9890-41065ba53c96.png)
 
