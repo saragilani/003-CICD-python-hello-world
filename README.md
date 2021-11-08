@@ -1,12 +1,14 @@
 # 003-CICD-python-hello-world
 
+Note: the name of our deployed application is: asg-ak-python-hello-world
+
 Note: this repo has a failing pipeline. Can you fix it so that the tests pass and it deploys to Heroku?
 
 ## 1. Fork this repo
 
 In order to have a working copy, fork this repository. You will need to enable workflows in your repository which will automatically create a pipeline which you can see by accessing the "Actions" tab here in GitHub.
 
-In the .github/workflows/pipeline.yml file you will find the code which defines our pipeline. There are three different "jobs" - *Build*, *Test* and *Deploy*. 
+In the .github/workflows/pipeline.yml file you will find the code which defines our pipeline. There are three different "jobs" - *Build*, *Test* and *Deploy*.
 
 &bigstar; On the Actions tab, click "Run Workflow" to start the pipeline for the first time.
 
