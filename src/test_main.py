@@ -14,5 +14,6 @@ def test_hello_world_message_from_index():
 
 
 def test_hello_world_message_from_client(client):
-    response = client.get('/')
+    response = client.get('')
+    print(response)
     assert response.data.decode('UTF-8') == 'Hello World'
